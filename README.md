@@ -1,4 +1,1 @@
-Project-Euler
-=============
-
-My solutions to Project Euler
+Here are my solutions for the [Project Euler](http://projecteuler.net/problems)
