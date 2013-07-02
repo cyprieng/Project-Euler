@@ -13,7 +13,7 @@ int main(){
         if(divisible){
             number = testNumber;
         }
-        testNumber+=2;
+        testNumber+=20;
     }
 
     printf("The smallest positive number that is evenly divisible by all of the numbers from 1 to 20 is: %d", number);
