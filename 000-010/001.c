@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
-    int i = 0, sum = 0;
+int arithmeticSum(int r, int maxN){
+    return r*(maxN / r)*((maxN / r) + 1)/2;
+}
 
-    for(i=1;i<1000;i++){
-        if(i%3 == 0 || i%5 == 0) sum += i;
-    }
+int main(){
+    int sum = arithmeticSum(3, 999) + arithmeticSum(5, 999) - arithmeticSum(15, 999);
 
     printf("Sum of all natural numbers below 1000 that are multiples of 3 or 5 is: %d", sum);
-
     return 0;
 }
