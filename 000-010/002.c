@@ -2,18 +2,16 @@
 #include <stdlib.h>
 
 int main(){
-    int a = 0, b = 1, c = 0, sum = 0;
+    long fib3 = 2, fib6 = 0, fib = 2, sum = 0;
 
-    while(c < 4000000){
-        c = a + b;
+    while(fib < 4000000){
+        sum += fib;
 
-        if(c%2 == 0) sum += c;
-
-        a = b;
-        b = c;
+        fib = 4*fib3 + fib6;
+        fib6 = fib3;
+        fib3 = fib;
     }
 
-    printf("Sum of the even Fibonacci numbers < 4 000 000: %d", sum);
-
+    printf("Sum of the even Fibonacci numbers < 4 000 000: %ld", sum);
     return 0;
 }
